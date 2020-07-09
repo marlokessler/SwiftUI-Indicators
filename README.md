@@ -1,3 +1,3 @@
 # Indicators
 
-A description of this package.
+This package contains a bundle of Indicators purely written in SwiftUI.
