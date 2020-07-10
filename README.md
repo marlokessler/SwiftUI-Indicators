@@ -1,24 +1,23 @@
 # Indicators
 
-This package contains a bundle of Indicators purely written in SwiftUI.
+This package contains a bundle of Indicators purely written in SwiftUI. Feel free to fork and add your code. 
 
-![Success indicator](SuccessIndicator.gif "Success indicator") ![Failure indicator](FailureIndicator.gif "Failure indicator") ![Info indicator](InfoIndicator.gif "Info indicator") ![Circular waiting indicator](CircularWaitingIndicator_with_text.gif "Circular waiting indicator")
-![Linear waiting indicator](LinearWaitingIndicator_with_text.gif "Linear waiting indicator") ![Circular progress indicator](CircularProgressIndicator_with_text.png "Circular progress indicator") ![Linear progress indicator](LinearProgressIndicator_with_text.png "Linear progress indicator")
+<img src="./Sources/Assets/Indicators.gif" alt="the different indicators" width="225" height="450">
 
 
 ## Getting Started
 
 To get started, add the package dependency via the Swift package manager. Therefore, open your project in Xcode. In the menu select _File>Swift Packages>Add Dependency_.
 
-![Click on _"Add Dependency"_](add_dependency.png)
+![Click on _Add Dependency_.](./Sources/Assets/add_dependency.png "Click on _Add Dependency_.")
 
 Then search for _Indicators_ and choose _SwiftUI-Indicators_ from Connapptivity. 
 
-![Select _"SwiftUI-Indcators"_](add_package.png)
+![Select _SwiftUI-Indicators_ from Connapptivity.](./Sources/Assets/add_package.png "Select _SwiftUI-Indicators_ from Connapptivity.")
 
 Now choose the version you want to add and the target and click _Finish_ to import the package. Finally you should see it in the project navigator under Swift Pakckage Dependencies.
 
-![The package shows up in the project navigator](navigator.png)
+![You can see the package in the navigator.](./Sources/Assets/navigator.png "You can see the package in the navigator.")
 
 For using Indicators in your code just add the `import Indicators` statement at the top of your swift code file.
 
@@ -27,7 +26,7 @@ For using Indicators in your code just add the `import Indicators` statement at 
 
 ### Indicator Types
 
-This package contains six indicator types and eight different indicators. Available indicators are
+This package contains six indicator types and seven different indicators. Available indicators are
 
 Success indicators:
 ```swift
@@ -95,7 +94,7 @@ ProgressIndicator(Double, text: String?)
 
 With circular indicators the text resizes automatically according to the size of the indicator. The indicator always trys to show the whole text and prevent coverage. 
 
-![The text resizes automatically](CircularIndicator_resizable_text.gif "The text resizes automatically")
+<img src="./Sources/Assets/CircularIndicator_resizable_text.gif" alt="The text resizes automatically." width="225" height="450">
 
 With linear indicators the text does not resize automatically. Here you can adjust the font according to your needs.
 
@@ -105,7 +104,7 @@ LinearIndicator()
 ```
 The indicators bottom is aligned to the text base, so the design looks always good.
 
-![The indicators bottom is aligned to the text base](CircularIndicator_resizable_text.gif "The text resizes automatically")
+![The indicators bottom is aligned to the text base.](./Sources/Assets/basetextalignment.png "The indicators bottom is aligned to the text base.")
 
 
 ## Change the Background with Progress Indicators
