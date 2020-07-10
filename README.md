@@ -2,7 +2,8 @@
 
 This package contains a bundle of Indicators purely written in SwiftUI. Feel free to fork and add your code. 
 
-<img src="./Sources/Assets/Indicators.gif" alt="the different indicators" width="225" height="450">
+<img src="./Sources/Assets/Indicators.gif" alt="The different Indicators" width="300" height="600">
+
 
 
 ## Getting Started
