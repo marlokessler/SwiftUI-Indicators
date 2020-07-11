@@ -1,9 +1,8 @@
 # Indicators
 
-This package contains a bundle of Indicators purely written in SwiftUI. Feel free to fork and add your code. 
+This package contains a bundle of Indicators purely written in SwiftUI.
 
 <img src="./Sources/Assets/Indicators.gif" alt="The different Indicators" width="300" height="600">
-
 
 
 ## Getting Started
@@ -108,11 +107,24 @@ The indicators bottom is aligned to the text base, so the design looks always go
 ![The indicators bottom is aligned to the text base.](./Sources/Assets/basetextalignment.png "The indicators bottom is aligned to the text base.")
 
 
-## Change the Background with Progress Indicators
+## Change the Background Stroke Color with Progress Indicators
 
-To give users a intuitive feeling of how much a process is progressed in relation to the whole, progress indicators have a background. You can change the backgroundcolor or set it to clear, if you do not want a colored background.
+To give users a intuitive feeling of how much a process is progressed in relation to the whole, progress indicators have a background stroke. You can change the stroke color or set it to clear, if you do not want a background stroke.
 
 ```swift
 ProgressIndicator()
     .backgroundColor(Color?)
 ```
+
+
+## Custom Indicator
+You can also create your custom Indicator by implementing the _Indicator_ protocol.
+
+```swift
+struct CustomIndicator: Indicator { ...
+```
+
+
+## Contribute to this Package
+
+This package is public, because everybody who wants to contribute should be able to do so. And we belive nothing is as powerful as community development. So, feel free to fork and add your code to this package.

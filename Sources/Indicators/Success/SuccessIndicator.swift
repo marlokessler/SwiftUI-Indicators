@@ -9,7 +9,7 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-public struct SuccessIndicator: View {
+public struct SuccessIndicator: Indicator {
     
     
     
@@ -67,23 +67,23 @@ public struct SuccessIndicator: View {
     }
     
     // APIs
-    public func foregroundColor(_ color: Color?) -> SuccessIndicator {
+    public func foregroundColor(_ color: Color?) -> Self {
         return SuccessIndicator(color, lineWidth, pace, animated, customAnimation)
     }
     
-    public func lineWidth(_ width: Double) -> SuccessIndicator {
+    public func lineWidth(_ width: Double) -> Self {
         return SuccessIndicator(foregroundColor, CGFloat(width), pace, animated, customAnimation)
     }
     
-    public func pace(_ pace: Double) -> SuccessIndicator {
+    public func pace(_ pace: Double) -> Self {
         return SuccessIndicator(foregroundColor, lineWidth, pace, animated, customAnimation)
     }
     
-    public func animated(_ animated: Bool = true) -> SuccessIndicator {
+    public func animated(_ animated: Bool = true) -> Self {
         return SuccessIndicator(foregroundColor, lineWidth, pace, animated, customAnimation)
     }
     
-    public func animation(_ animation: Animation?) -> SuccessIndicator {
+    public func animation(_ animation: Animation?) -> Self {
         return SuccessIndicator(foregroundColor, lineWidth, pace, animated, animation)
     }
     

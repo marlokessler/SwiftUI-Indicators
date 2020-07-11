@@ -9,7 +9,7 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-public struct CircularProgressIndicator: View, InnerIndicatorText {
+public struct CircularProgressIndicator: Indicator, InnerIndicatorText {
     
     
     
@@ -66,27 +66,27 @@ public struct CircularProgressIndicator: View, InnerIndicatorText {
     
     // MARK: - Methods
     // APIs
-    public func foregroundColor(_ color: Color?) -> CircularProgressIndicator {
+    public func foregroundColor(_ color: Color?) -> Self {
         return CircularProgressIndicator(progress, innerText, color, backgroundColor, lineWidth, pace, animated, customAnimation)
     }
     
-    public func backgroundColor(_ color: Color?) -> CircularProgressIndicator {
+    public func backgroundColor(_ color: Color?) -> Self {
         return CircularProgressIndicator(progress, innerText, foregroundColor, color, lineWidth, pace, animated, customAnimation)
     }
     
-    public func lineWidth(_ width: Double) -> CircularProgressIndicator {
+    public func lineWidth(_ width: Double) -> Self {
         return CircularProgressIndicator(progress, innerText, foregroundColor, backgroundColor, CGFloat(width), pace, animated, customAnimation)
     }
     
-    public func pace(_ pace: Double) -> CircularProgressIndicator {
+    public func pace(_ pace: Double) -> Self {
         return CircularProgressIndicator(progress, innerText, foregroundColor, backgroundColor, lineWidth, pace, animated, customAnimation)
     }
     
-    public func animated(_ animated: Bool = true) -> CircularProgressIndicator {
+    public func animated(_ animated: Bool = true) -> Self {
         return CircularProgressIndicator(progress, innerText, foregroundColor, backgroundColor, lineWidth, pace, animated, customAnimation)
     }
     
-    public func animation(_ animation: Animation?) -> CircularProgressIndicator {
+    public func animation(_ animation: Animation?) -> Self {
         return CircularProgressIndicator(progress, innerText, foregroundColor, backgroundColor, lineWidth, pace, animated, animation)
     }
     

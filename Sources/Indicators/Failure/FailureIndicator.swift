@@ -9,7 +9,7 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-public struct FailureIndicator: View {
+public struct FailureIndicator: Indicator {
     
     
     
@@ -67,23 +67,23 @@ public struct FailureIndicator: View {
     }
     
     // APIs
-    public func foregroundColor(_ color: Color?) -> FailureIndicator {
+    public func foregroundColor(_ color: Color?) -> Self {
         return FailureIndicator(color, lineWidth, pace, animated, customAnimation)
     }
     
-    public func lineWidth(_ width: Double) -> FailureIndicator {
+    public func lineWidth(_ width: Double) -> Self {
         return FailureIndicator(foregroundColor, CGFloat(width), pace, animated, customAnimation)
     }
     
-    public func pace(_ pace: Double) -> FailureIndicator {
+    public func pace(_ pace: Double) -> Self {
         return FailureIndicator(foregroundColor, lineWidth, pace, animated, customAnimation)
     }
     
-    public func animated(_ animated: Bool = true) -> FailureIndicator {
+    public func animated(_ animated: Bool = true) -> Self {
         return FailureIndicator(foregroundColor, lineWidth, pace, animated, customAnimation)
     }
     
-    public func animation(_ animation: Animation?) -> FailureIndicator {
+    public func animation(_ animation: Animation?) -> Self {
         return FailureIndicator(foregroundColor, lineWidth, pace, animated, animation)
     }
     

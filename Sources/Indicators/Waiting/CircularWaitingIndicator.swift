@@ -9,7 +9,7 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-public struct CircularWaitingIndicator: View, InnerIndicatorText {
+public struct CircularWaitingIndicator: Indicator, InnerIndicatorText {
     
     
     
@@ -39,7 +39,7 @@ public struct CircularWaitingIndicator: View, InnerIndicatorText {
     // MARK: - Variables
     private var innerText: String?
     var foregroundColor: Color = .white
-    var lineWidth: CGFloat = 10
+    private var lineWidth: CGFloat = 10
     private var pace: Double = 1.5
     private var animated: Bool = true
     private var customAnimation: Animation?
@@ -73,23 +73,23 @@ public struct CircularWaitingIndicator: View, InnerIndicatorText {
     }
     
     // APIs
-    public func foregroundColor(_ color: Color?) -> CircularWaitingIndicator {
+    public func foregroundColor(_ color: Color?) -> Self {
         return CircularWaitingIndicator(innerText, color, lineWidth, pace, animated, customAnimation)
     }
     
-    public func lineWidth(_ width: Double) -> CircularWaitingIndicator {
+    public func lineWidth(_ width: Double) -> Self {
         return CircularWaitingIndicator(innerText, foregroundColor, CGFloat(width), pace, animated, customAnimation)
     }
     
-    public func pace(_ pace: Double) -> CircularWaitingIndicator {
+    public func pace(_ pace: Double) -> Self {
         return CircularWaitingIndicator(innerText, foregroundColor, lineWidth, pace, animated, customAnimation)
     }
     
-    public func animated(_ animated: Bool = true) -> CircularWaitingIndicator {
+    public func animated(_ animated: Bool = true) -> Self {
         return CircularWaitingIndicator(innerText, foregroundColor, lineWidth, pace, animated, customAnimation)
     }
     
-    public func animation(_ animation: Animation?) -> CircularWaitingIndicator {
+    public func animation(_ animation: Animation?) -> Self {
         return CircularWaitingIndicator(innerText, foregroundColor, lineWidth, pace, animated, animation)
     }
     

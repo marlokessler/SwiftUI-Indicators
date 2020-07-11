@@ -9,7 +9,7 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-public struct LinearProgressIndicator: View {
+public struct LinearProgressIndicator: Indicator {
     
     
     
@@ -69,31 +69,31 @@ public struct LinearProgressIndicator: View {
     
     // MARK: - Methods
     // APIs
-    public func font(_ font: Font?) -> LinearProgressIndicator {
+    public func font(_ font: Font?) -> Self {
         return LinearProgressIndicator(progress, text, font, foregroundColor, backgroundColor, lineWidth, pace, animated, customAnimation)
     }
     
-    public func foregroundColor(_ color: Color?) -> LinearProgressIndicator {
+    public func foregroundColor(_ color: Color?) -> Self {
         return LinearProgressIndicator(progress, text, font, color, backgroundColor, lineWidth, pace, animated, customAnimation)
     }
     
-    public func backgroundColor(_ color: Color?) -> LinearProgressIndicator {
+    public func backgroundColor(_ color: Color?) -> Self {
         return LinearProgressIndicator(progress, text, font, foregroundColor, color, lineWidth, pace, animated, customAnimation)
     }
     
-    public func lineWidth(_ width: Double) -> LinearProgressIndicator {
+    public func lineWidth(_ width: Double) -> Self {
         return LinearProgressIndicator(progress, text, font, foregroundColor, backgroundColor, CGFloat(width), pace, animated, customAnimation)
     }
     
-    public func pace(_ pace: Double) -> LinearProgressIndicator {
+    public func pace(_ pace: Double) -> Self {
         return LinearProgressIndicator(progress, text, font, foregroundColor, backgroundColor, lineWidth, pace, animated, customAnimation)
     }
     
-    public func animated(_ animated: Bool = true) -> LinearProgressIndicator {
+    public func animated(_ animated: Bool = true) -> Self {
         return LinearProgressIndicator(progress, text, font, foregroundColor, backgroundColor, lineWidth, pace, animated, customAnimation)
     }
     
-    public func animation(_ animation: Animation?) -> LinearProgressIndicator {
+    public func animation(_ animation: Animation?) -> Self {
         return LinearProgressIndicator(progress, text, font, foregroundColor, backgroundColor, lineWidth, pace, animated, animation)
     }
     

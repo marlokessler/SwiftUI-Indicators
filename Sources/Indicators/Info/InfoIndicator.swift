@@ -9,7 +9,7 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-public struct InfoIndicator: View {
+public struct InfoIndicator: Indicator {
     
     
     
@@ -66,23 +66,23 @@ public struct InfoIndicator: View {
     }
     
     // APIs
-    public func foregroundColor(_ color: Color?) -> InfoIndicator {
+    public func foregroundColor(_ color: Color?) -> Self {
         return InfoIndicator(color, lineWidth, pace, animated, customAnimation)
     }
     
-    public func lineWidth(_ width: Double) -> InfoIndicator {
+    public func lineWidth(_ width: Double) -> Self {
         return InfoIndicator(foregroundColor, CGFloat(width), pace, animated, customAnimation)
     }
     
-    public func pace(_ pace: Double) -> InfoIndicator {
+    public func pace(_ pace: Double) -> Self {
         return InfoIndicator(foregroundColor, lineWidth, pace, animated, customAnimation)
     }
     
-    public func animated(_ animated: Bool = true) -> InfoIndicator {
+    public func animated(_ animated: Bool = true) -> Self {
         return InfoIndicator(foregroundColor, lineWidth, pace, animated, customAnimation)
     }
     
-    public func animation(_ animation: Animation?) -> InfoIndicator {
+    public func animation(_ animation: Animation?) -> Self {
         return InfoIndicator(foregroundColor, lineWidth, pace, animated, animation)
     }
     

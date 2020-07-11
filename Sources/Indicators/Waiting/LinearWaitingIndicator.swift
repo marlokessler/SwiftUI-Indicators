@@ -9,7 +9,8 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-public struct LinearWaitingIndicator: View {
+public struct LinearWaitingIndicator: Indicator {
+    
 
 
 
@@ -79,31 +80,31 @@ public struct LinearWaitingIndicator: View {
     }
 
     // APIs
-    public func font(_ font: Font?) -> LinearWaitingIndicator {
+    public func font(_ font: Font?) -> Self {
         return LinearWaitingIndicator(text, font, foregroundColor, backgroundColor, lineWidth, pace, animated, customAnimation)
     }
 
-    public func foregroundColor(_ color: Color?) -> LinearWaitingIndicator {
+    public func foregroundColor(_ color: Color?) -> Self {
         return LinearWaitingIndicator(text, font, color, backgroundColor, lineWidth, pace, animated, customAnimation)
     }
 
-    public func backgroundColor(_ color: Color?) -> LinearWaitingIndicator {
+    public func backgroundColor(_ color: Color?) -> Self {
         return LinearWaitingIndicator(text, font, foregroundColor, color, lineWidth, pace, animated, customAnimation)
     }
 
-    public func lineWidth(_ width: Double) -> LinearWaitingIndicator {
+    public func lineWidth(_ width: Double) -> Self {
         return LinearWaitingIndicator(text, font, foregroundColor, backgroundColor, CGFloat(width), pace, animated, customAnimation)
     }
 
-    public func pace(_ pace: Double) -> LinearWaitingIndicator {
+    public func pace(_ pace: Double) -> Self {
         return LinearWaitingIndicator(text, font, foregroundColor, backgroundColor, lineWidth, pace, animated, customAnimation)
     }
 
-    public func animated(_ animated: Bool = true) -> LinearWaitingIndicator {
+    public func animated(_ animated: Bool = true) -> Self {
         return LinearWaitingIndicator(text, font, foregroundColor, backgroundColor, lineWidth, pace, animated, customAnimation)
     }
 
-    public func animation(_ animation: Animation?) -> LinearWaitingIndicator {
+    public func animation(_ animation: Animation?) -> Self {
         return LinearWaitingIndicator(text, font, foregroundColor, backgroundColor, lineWidth, pace, animated, animation)
     }
 
