@@ -50,7 +50,7 @@ public struct LinearProgressIndicator: Indicator {
     private var font: Font?
     private var foregroundColor: Color = .white
     private var backgroundColor: Color = Color.gray.opacity(0.5)
-    private var lineWidth: CGFloat = 7
+    private var lineWidth: CGFloat = 5
     private var pace: Double = 0.5
     private var animated: Bool = true
     private var customAnimation: Animation?

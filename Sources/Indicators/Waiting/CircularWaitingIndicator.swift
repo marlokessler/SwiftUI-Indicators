@@ -39,7 +39,7 @@ public struct CircularWaitingIndicator: Indicator, InnerIndicatorText {
     // MARK: - Variables
     private var innerText: String?
     var foregroundColor: Color = .white
-    private var lineWidth: CGFloat = 10
+    private var lineWidth: CGFloat = 5
     private var pace: Double = 1.5
     private var animated: Bool = true
     private var customAnimation: Animation?

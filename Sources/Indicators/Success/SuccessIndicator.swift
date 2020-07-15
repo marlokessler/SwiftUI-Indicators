@@ -34,7 +34,7 @@ public struct SuccessIndicator: Indicator {
     
     // MARK: - Variables
     private var foregroundColor: Color = .white
-    private var lineWidth: CGFloat = 10
+    private var lineWidth: CGFloat = 5
     private var pace: Double = 1.5
     private var animated: Bool = true
     private var customAnimation: Animation?

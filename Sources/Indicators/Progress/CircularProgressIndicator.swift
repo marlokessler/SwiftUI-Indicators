@@ -47,7 +47,7 @@ public struct CircularProgressIndicator: Indicator, InnerIndicatorText {
     
     var foregroundColor: Color = .white
     private var backgroundColor: Color = Color.gray.opacity(0.5)
-    var lineWidth: CGFloat = 10
+    var lineWidth: CGFloat = 5
     private var pace: Double = 0.5
     private var animated: Bool = true
     private var customAnimation: Animation?
