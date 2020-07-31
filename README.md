@@ -7,6 +7,8 @@ This package contains a bundle of Indicators purely written in SwiftUI.
 
 ## Getting Started
 
+### Swift Package Manager
+
 To get started, add the package dependency via the Swift package manager. Therefore, open your project in Xcode. In the menu select _File>Swift Packages>Add Dependency_.
 
 ![Click on _Add Dependency_.](./Sources/Assets/add_dependency.png "Click on _Add Dependency_.")
@@ -18,6 +20,17 @@ Then search for _Indicators_ and choose _SwiftUI-Indicators_ from Connapptivity.
 Now choose the version you want to add and the target and click _Finish_ to import the package. Finally you should see it in the project navigator under Swift Pakckage Dependencies.
 
 ![You can see the package in the navigator.](./Sources/Assets/navigator.png "You can see the package in the navigator.")
+
+### CocoaPods
+
+Alternatively, you can use cocoapods. Just add
+
+```ruby
+pod 'Indicators'
+```
+
+to your podfile.
+
 
 For using Indicators in your code just add the `import Indicators` statement at the top of your swift code file.
 
