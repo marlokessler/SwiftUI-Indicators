@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "Indicators"
-  spec.version      = "1.3.0"
+  spec.version      = "1.3.1"
   spec.summary      = "A set of useful Extensions in Swift."
   spec.homepage     = "https://github.com/Connapptivity/SwiftUI-Indicators"
 
@@ -20,5 +20,7 @@ Pod::Spec.new do |spec|
   spec.exclude_files = "Sources/Exclude"
   
   spec.framework  = "Foundation"
+  
+  spec.swift_version = "5.2"
   
 end
